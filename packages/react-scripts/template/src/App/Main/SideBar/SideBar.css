@@ -1,0 +1,43 @@
+.SideBar .Sidebar__link.Sidebar__link--blue {
+  border-left: solid 0.25em var(--blue);
+}
+
+.SideBar > .Sidebar__link.Sidebar__link--blue:hover,
+.SideBar > .Sidebar__link.Sidebar__link--blue.Sidebar__link--active {
+  background: var(--blue);
+  border-left: solid 0.25em var(--blue-dark);
+}
+
+.SideBar .Sidebar__link.Sidebar__link--orange {
+  border-left: solid 0.25em var(--orange);
+}
+
+.SideBar > .Sidebar__link.Sidebar__link--orange:hover,
+.SideBar > .Sidebar__link.Sidebar__link--orange.Sidebar__link--active {
+  background: var(--orange);
+  border-left: solid 0.25em var(--orange-dark);
+}
+
+.SideBar > .Sidebar__link {
+  padding: 1em;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: solid 0.25em transparent;
+  height: 1.5em;
+  width: 1.5em;
+  align-self: center;
+}
+
+.SideBar > .Sidebar__logout {
+  position: fixed;
+  bottom: 0;
+  width: 4em;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
