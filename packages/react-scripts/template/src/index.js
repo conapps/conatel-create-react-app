@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { AppWithRouter as App } from './App/AppWithRouter';
+import { EnhancedAppContainerWithRouter as App } from './App';
 import registerServiceWorker from './App/registerServiceWorker';
 import { Provider } from 'react-redux';
 import { store, history } from './state/';

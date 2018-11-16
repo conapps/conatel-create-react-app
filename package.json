@@ -38,11 +38,6 @@
     "tempy": "^0.2.1",
     "wait-for-localhost": "2.0.1"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{js,md,css}": [
       "prettier --trailing-comma es5 --single-quote --write",

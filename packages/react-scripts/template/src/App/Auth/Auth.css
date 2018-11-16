@@ -1,0 +1,37 @@
+.Auth {
+    width: 100vw;
+    height: calc(100vh - 10em);
+    display: grid;
+  }
+  
+  .Auth > div {
+    margin: auto;
+    width: 33%;
+    min-width: 25em;
+    max-width: 35em;
+  }
+  
+  .Auth h3 {
+    text-align: center;
+    color: var(--blue-dark);
+  }
+  
+  .Auth p {
+    text-align: center;
+  }
+  
+  .Auth label {
+    color: var(--blue-dark);
+  }
+  
+  .Auth button {
+    margin-top: 0.5em;
+  }
+  
+  .Auth a {
+    color: var(--blue-dark);
+    text-align: center;
+    display: block;
+    margin-top: 0.5em;
+  }
+  
