@@ -1,0 +1,14 @@
+.Alert {
+    position: relative;
+    padding: 0.75em 1.25em;
+    margin-bottom: 1em;
+    border: 1px solid transparent;
+    border-radius: 0.25em;
+    color: white;
+    background-color: var(--red-light);
+  }
+  
+  .Alert.success {
+    background-color: var(--green);
+  }
+  

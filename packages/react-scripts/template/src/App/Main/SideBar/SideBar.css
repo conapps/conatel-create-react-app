@@ -1,5 +1,5 @@
 .SideBar .Sidebar__link.Sidebar__link--blue {
-  border-left: solid 0.25em var(--blue);
+    border-left: solid 0.25em var(--blue);
 }
 
 .SideBar > .Sidebar__link.Sidebar__link--blue:hover,
@@ -8,10 +8,11 @@
   border-left: solid 0.25em var(--blue-dark);
 }
 
+  
 .SideBar .Sidebar__link.Sidebar__link--orange {
   border-left: solid 0.25em var(--orange);
 }
-
+  
 .SideBar > .Sidebar__link.Sidebar__link--orange:hover,
 .SideBar > .Sidebar__link.Sidebar__link--orange.Sidebar__link--active {
   background: var(--orange);

@@ -1,14 +1,14 @@
-.MainBar a {
-  color: var(--blue-black);
-  font-weight: 500;
-  transition: color 0.5s;
+.MainBar  a {
+    color: var(--blue-black);
+    font-weight: 500;
+    transition: color 0.5s;
 }
-
-.MainBar a:hover {
-  color: var(--blue-sky-dark);
+  
+.MainBar  a:hover {
+    color: var(--blue-sky-dark);
 }
-
+  
 .MainBar :hover a,
-.MainBar a {
-  text-decoration: none;
+.MainBar  a {
+    text-decoration: none;
 }
