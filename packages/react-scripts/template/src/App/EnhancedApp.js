@@ -8,7 +8,7 @@ var enhance = compose(
   lifecycle({
     componentDidMount() {
       this.props.init();
-    },
+    }
   }),
   pure
 );
@@ -17,5 +17,5 @@ export var EnhancedApp = enhance(App);
 EnhancedApp.displayName = 'enhance(App)';
 
 EnhancedApp.propTypes = {
-  init: T.func.isRequired,
+  init: T.func.isRequired
 };

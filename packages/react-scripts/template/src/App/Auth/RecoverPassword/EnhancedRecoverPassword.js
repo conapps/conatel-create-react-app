@@ -7,18 +7,18 @@ import { RecoverPassword } from './RecoverPassword.js';
 export var EnhancedRecoverPassword = compose(
   withFormHandlers(
     {
-      password: '',
+      password: ''
     },
     {
       handleSubmit: ({
         onSubmit,
         email,
         code,
-        formState: { password },
+        formState: { password }
       }) => e => {
         e.preventDefault();
         onSubmit({ email, code, password });
-      },
+      }
     }
   ),
   pure
@@ -29,5 +29,5 @@ EnhancedRecoverPassword.displayName = 'enhance(RecoverPassword)';
 EnhancedRecoverPassword.propTypes = {
   onSubmit: T.func.isRequired,
   email: T.string,
-  code: T.string,
+  code: T.string
 };

@@ -41,10 +41,10 @@ export var Spinner = ({ fill, scale, className, ...props }) => (
 
 Spinner.propTypes = {
   fill: T.string,
-  scale: T.number,
+  scale: T.number
 };
 
 Spinner.defaultProps = {
   fill: '#FFF',
-  scale: 1,
+  scale: 1
 };

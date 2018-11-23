@@ -32,7 +32,7 @@ export var SideBar = ({ items, pathname, logout }) => (
           'Sidebar__link--active':
             item.pathname === '/'
               ? pathname === item.pathname
-              : pathname.indexOf(item.pathname) === 0,
+              : pathname.indexOf(item.pathname) === 0
         })}
         key={item.pathname}
         to={item.pathname}

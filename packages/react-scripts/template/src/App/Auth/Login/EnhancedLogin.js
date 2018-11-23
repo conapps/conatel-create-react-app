@@ -7,7 +7,7 @@ import { Login } from './Login.js';
 export var EnhancedLogin = compose(
   withFormHandlers({
     email: '',
-    password: '',
+    password: ''
   }),
   pure
 )(Login);
@@ -15,5 +15,5 @@ export var EnhancedLogin = compose(
 EnhancedLogin.displayName = 'enhance(Login)';
 
 EnhancedLogin.propTypes = {
-  onSubmit: T.func.isRequired,
+  onSubmit: T.func.isRequired
 };

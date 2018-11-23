@@ -6,7 +6,7 @@ import { ForgotPassword } from './ForgotPassword.js';
 
 export var EnhancedForgotPassword = compose(
   withFormHandlers({
-    email: '',
+    email: ''
   }),
   pure
 )(ForgotPassword);
@@ -14,5 +14,5 @@ export var EnhancedForgotPassword = compose(
 EnhancedForgotPassword.displayName = 'enhance(ForgotPassword)';
 
 EnhancedForgotPassword.propTypes = {
-  onSubmit: T.func.isRequired,
+  onSubmit: T.func.isRequired
 };

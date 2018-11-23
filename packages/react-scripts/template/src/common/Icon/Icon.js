@@ -6,7 +6,7 @@ var INVALID_ICON_TYPE = () => <span>Invalid icon type</span>;
 var icons = {
   signOut: require('./Icons/SignOut.js').default,
   tachometer: require('./Icons/Tachometer.js').default,
-  pencil: require('./Icons/Pencil.js').default,
+  pencil: require('./Icons/Pencil.js').default
 };
 
 export var Icon = ({ type, ...props }) => {
@@ -20,10 +20,10 @@ Icon.propTypes = {
   fill: T.string,
   size: T.number,
   className: T.string,
-  onClick: T.func,
+  onClick: T.func
 };
 
 Icon.defaultProps = {
   fill: '#000',
-  size: 1,
+  size: 1
 };

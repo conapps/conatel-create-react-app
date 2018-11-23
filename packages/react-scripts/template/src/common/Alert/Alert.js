@@ -6,7 +6,7 @@ export var Alert = ({ type, onClick, children }) => (
   <div
     onClick={onClick}
     className={classnames('Alert', {
-      [type]: !!type,
+      [type]: !!type
     })}
   >
     {children}
@@ -15,9 +15,9 @@ export var Alert = ({ type, onClick, children }) => (
 
 Alert.propTypes = {
   type: T.string,
-  onClick: T.func,
+  onClick: T.func
 };
 
 Alert.defaultProps = {
-  type: 'default',
+  type: 'default'
 };

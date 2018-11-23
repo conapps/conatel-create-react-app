@@ -3,13 +3,13 @@ import { EnhancedApp } from './EnhancedApp.js';
 import get from 'lodash/get';
 
 var mapStateToProps = state => ({
-  ready: get(state, 'app.ready', false),
+  ready: get(state, 'app.ready', false)
 });
 
 var mapActionsToProps = {
   init: () => ({
-    type: 'APP_INIT',
-  }),
+    type: 'APP_INIT'
+  })
 };
 
 export var EnhancedAppContainer = connect(

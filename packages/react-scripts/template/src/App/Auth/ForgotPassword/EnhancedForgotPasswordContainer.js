@@ -3,27 +3,27 @@ import { connect } from 'react-redux';
 import {
   FORGOT_PASSWORD_REQUEST,
   FORGOT_PASSWORD_ERROR_AWK,
-  FORGOT_PASSWORD_MESSAGE_AWK,
+  FORGOT_PASSWORD_MESSAGE_AWK
 } from '../../../state/actions/';
 import { EnhancedForgotPassword } from './EnhancedForgotPassword.js';
 
 var mapStateToProps = state => ({
   loading: get(state, 'flags.loading.forgotPassword', false),
   error: get(state, 'errors.forgotPassword', null),
-  message: get(state, 'messages.forgotPassword', null),
+  message: get(state, 'messages.forgotPassword', null)
 });
 
 var mapActionsToProps = {
   onSubmit: payload => ({
     type: FORGOT_PASSWORD_REQUEST,
-    payload,
+    payload
   }),
   awkError: () => ({
-    type: FORGOT_PASSWORD_ERROR_AWK,
+    type: FORGOT_PASSWORD_ERROR_AWK
   }),
   awkMessage: () => ({
-    type: FORGOT_PASSWORD_MESSAGE_AWK,
-  }),
+    type: FORGOT_PASSWORD_MESSAGE_AWK
+  })
 };
 
 export var EnhancedForgotPasswordContainer = connect(

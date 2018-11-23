@@ -3,7 +3,7 @@ import { Auth } from './Auth.js';
 import get from 'lodash/get';
 
 var mapStateToProps = state => ({
-  isAuthenticated: get(state, 'app.logged', false),
+  isAuthenticated: get(state, 'app.logged', false)
 });
 
 export var AuthContainer = connect(

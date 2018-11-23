@@ -7,8 +7,8 @@ var enhance = compose(
   defaultProps({
     items: [
       { icon: 'tachometer', pathname: '/', color: 'blue' },
-      { icon: 'pencil', pathname: '/page', color: 'orange' },
-    ],
+      { icon: 'pencil', pathname: '/page', color: 'orange' }
+    ]
   }),
   pure
 );

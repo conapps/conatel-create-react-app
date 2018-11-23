@@ -10,7 +10,7 @@ export var ForgotPassword = ({
   awkMessage,
   loading,
   handleSubmit,
-  handleChange,
+  handleChange
 }) => (
   <Pane
     background="tint2"
@@ -41,9 +41,9 @@ export var ForgotPassword = ({
     <Button
       onClick={handleSubmit}
       margin={'1.3em'}
-      alignTec
       appearance="primary"
       isLoading={loading}
+      paddingLeft={"13em"}
     >
       Aceptar
     </Button>

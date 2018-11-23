@@ -1,7 +1,7 @@
 import startCase from 'lodash/startCase';
 import get from 'lodash/get';
 import { LOGIN_SUCCESS, LOGOUT_SUCCESS, APP_INIT } from '../actions';
-export var appReducer = (state = {}, { type, payload }) => {
+export var appReducer = (state = { logged: false }, { type, payload }) => {
   switch (type) {
     case APP_INIT:
       return {

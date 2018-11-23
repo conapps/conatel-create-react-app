@@ -21,7 +21,7 @@ var Pencil = ({ fill, size, props }) => (
 
 Pencil.propTypes = {
   size: T.number.isRequired,
-  fill: T.string.isRequired,
+  fill: T.string.isRequired
 };
 
 export default Pencil;
