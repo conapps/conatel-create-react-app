@@ -21,7 +21,7 @@ var SignOut = ({ fill, size, ...props }) => (
 
 SignOut.propTypes = {
   size: T.number.isRequired,
-  fill: T.string.isRequired,
+  fill: T.string.isRequired
 };
 
 export default SignOut;

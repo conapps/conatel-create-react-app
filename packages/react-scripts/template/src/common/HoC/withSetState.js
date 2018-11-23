@@ -5,8 +5,8 @@ var withSetState = state => {
 
   return withStateHandlers(setState, {
     setFormState: state => (key, value) => ({
-      formState: { ...state.formState, [key]: value },
-    }),
+      formState: { ...state.formState, [key]: value }
+    })
   });
 };
 

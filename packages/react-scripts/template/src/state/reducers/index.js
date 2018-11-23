@@ -5,7 +5,7 @@ import { appReducer } from './app';
 export var rootReducer = history =>
   combineReducers({
     app: appReducer,
-    router: connectRouter(history),
+    router: connectRouter(history)
   });
 
 export * from './app';

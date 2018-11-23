@@ -15,17 +15,17 @@ var withFormHandlers = (initialFormState, handlers = {}) => {
   var initialState =
     typeof initialFormState === 'function'
       ? props => ({
-          formState: initialFormState(props),
+          formState: initialFormState(props)
         })
       : {
-          formState: initialFormState,
+          formState: initialFormState
         };
 
   return compose(
     withSetState(initialState),
     withHandlers({
       handleChange: handlers.handleChange || handleChange,
-      handleSubmit: handlers.handleSubmit || handleSubmit,
+      handleSubmit: handlers.handleSubmit || handleSubmit
     })
   );
 };

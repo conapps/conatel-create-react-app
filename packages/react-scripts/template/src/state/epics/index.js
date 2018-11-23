@@ -1,5 +1,5 @@
 import { combineEpics } from 'redux-observable';
 
-import { login, logout } from './app';
+import { login, logout, init } from './app';
 
-export var rootEpic = combineEpics(login, logout);
+export var rootEpic = combineEpics(init, login, logout);

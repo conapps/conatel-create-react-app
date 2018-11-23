@@ -4,13 +4,13 @@ import getDisplayName from 'recompose/getDisplayName.js';
 import { EnhancedSidebar } from './EnhancedSideBar.js';
 
 var mapStateToProps = state => ({
-  pathname: get(state, 'router.location.pathname', '/'),
+  pathname: get(state, 'router.location.pathname', '/')
 });
 
 var actionsToProps = {
   logout: () => ({
-    type: 'LOGOUT_REQUEST',
-  }),
+    type: 'LOGOUT_REQUEST'
+  })
 };
 
 export var EnhancedSidebarContainer = connect(

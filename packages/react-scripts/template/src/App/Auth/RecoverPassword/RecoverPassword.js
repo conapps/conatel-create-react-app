@@ -39,11 +39,11 @@ export var RecoverPassword = ({
     <Button
       onClick={handleSubmit}
       margin={'1.3em'}
-      alignTec
       appearance="primary"
       isLoading={loading}
+      paddingLeft={'13em'}
     >
-      <span> Aceptar </span>
+      Aceptar
     </Button>
 
     <Link to="/auth/login">Volver al inicio</Link>

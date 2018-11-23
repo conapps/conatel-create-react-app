@@ -5,17 +5,17 @@ import { EnhancedLogin } from './EnhancedLogin.js';
 
 var mapStateToProps = state => ({
   loading: get(state, 'flags.loading.login', false),
-  error: get(state, 'errors.login', null),
+  error: get(state, 'errors.login', null)
 });
 
 var mapActionsToProps = {
   onSubmit: payload => ({
     type: LOGIN_REQUEST,
-    payload,
+    payload
   }),
   awkError: () => ({
-    type: LOGIN_ERROR_AWK,
-  }),
+    type: LOGIN_ERROR_AWK
+  })
 };
 
 export var EnhancedLoginContainer = connect(

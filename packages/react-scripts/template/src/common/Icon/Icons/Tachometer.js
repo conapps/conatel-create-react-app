@@ -21,7 +21,7 @@ var Tachometer = ({ size, fill, ...props }) => (
 
 Tachometer.propTypes = {
   size: T.number.isRequired,
-  fill: T.string.isRequired,
+  fill: T.string.isRequired
 };
 
 export default Tachometer;

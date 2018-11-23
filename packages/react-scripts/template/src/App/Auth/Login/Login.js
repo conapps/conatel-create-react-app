@@ -8,7 +8,7 @@ export var Login = ({
   error,
   handleSubmit,
   handleChange,
-  loading,
+  loading
 }) => (
   <Pane
     background="tint2"
@@ -35,17 +35,18 @@ export var Login = ({
       margin={'1em'}
       onChange={handleChange('password')}
     />
-    <Link textAling={'center'} to="/auth/forgot-password">
+    <Link textaling={'center'} to="/auth/forgot-password">
       ¿Olvido su contraseña?
     </Link>
     <Button
       onClick={handleSubmit}
       margin={'1.3em'}
-      alignTec
       appearance="primary"
       isLoading={loading}
+      display="inline-flex"
+      paddingLeft={"13em"}
     >
-      Aceptar
+        Aceptar
     </Button>
   </Pane>
 );
