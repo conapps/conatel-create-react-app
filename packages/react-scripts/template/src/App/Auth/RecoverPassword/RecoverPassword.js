@@ -41,7 +41,7 @@ export var RecoverPassword = ({
       margin={'1.3em'}
       appearance="primary"
       isLoading={loading}
-      paddingLeft={'13em'}
+      justifyContent="center"
     >
       Aceptar
     </Button>

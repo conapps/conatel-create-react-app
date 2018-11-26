@@ -44,8 +44,8 @@ export var Login = ({
       appearance="primary"
       isLoading={loading}
       display="inline-flex"
-      paddingLeft={"13em"}
-    >
+      justifyContent="center"
+        >
         Aceptar
     </Button>
   </Pane>
