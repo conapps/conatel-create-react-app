@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import { EnhancedAppContainerWithRouter as App } from './App';
-import registerServiceWorker from './App/registerServiceWorker';
-import { Provider } from 'react-redux';
-import { store, history } from './state/';
 import { ConnectedRouter as Router } from 'connected-react-router';
+import { Provider } from 'react-redux';
+
+import './index.css';
+import App from './App/EnhancedApp';
+import * as serviceWorker from './serviceWorker';
+import { history, store } from './state/store';
+
+const $rootEl = document.getElementById('root');
 
 ReactDOM.render(
   <Provider store={store}>
@@ -13,6 +16,10 @@ ReactDOM.render(
       <App />
     </Router>
   </Provider>,
-  document.getElementById('root')
+  $rootEl
 );
-registerServiceWorker();
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();

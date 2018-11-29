@@ -1,15 +1,8 @@
 import React from 'react';
 import { Pane, TextInputField, Button } from 'evergreen-ui';
 import { Link } from 'react-router-dom';
-import { Alert } from '../../../common/Alert';
 
-export var Login = ({
-  awkError,
-  error,
-  handleSubmit,
-  handleChange,
-  loading
-}) => (
+var Login = ({ handleSubmit, handleChange, loading }) => (
   <Pane
     background="tint2"
     width={'26em'}
@@ -18,7 +11,6 @@ export var Login = ({
     elevation={2}
   >
     <h3>Iniciar Sesión</h3>
-    {error && <Alert onClick={awkError}>{error}</Alert>}
     <TextInputField
       label="Email"
       type="text"
@@ -44,9 +36,11 @@ export var Login = ({
       appearance="primary"
       isLoading={loading}
       display="inline-flex"
-      justifyContent="center"
-        >
-        Aceptar
+      paddingLeft={'13em'}
+    >
+      Aceptar
     </Button>
   </Pane>
 );
+
+export default Login;
