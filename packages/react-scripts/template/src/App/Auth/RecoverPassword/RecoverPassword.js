@@ -3,7 +3,7 @@ import { Pane, TextInputField, Button } from 'evergreen-ui';
 import { Link } from 'react-router-dom';
 import { Alert } from '../../../common/Alert';
 
-export var RecoverPassword = ({
+var RecoverPassword = ({
   error,
   message,
   awkError,
@@ -21,12 +21,6 @@ export var RecoverPassword = ({
   >
     <h3>Recuperar Contraseña</h3>
     <p>Ingrese su nueva contraseña.</p>
-    {error && <Alert onClick={awkError}>{error}</Alert>}
-    {message && (
-      <Alert type="success" onClick={awkMessage}>
-        {message}
-      </Alert>
-    )}
     <TextInputField
       label="Nueva Contraseña"
       type="password"
@@ -41,7 +35,7 @@ export var RecoverPassword = ({
       margin={'1.3em'}
       appearance="primary"
       isLoading={loading}
-      justifyContent="center"
+      paddingLeft={'13em'}
     >
       Aceptar
     </Button>
@@ -50,3 +44,5 @@ export var RecoverPassword = ({
     <br />
   </Pane>
 );
+
+export default RecoverPassword;

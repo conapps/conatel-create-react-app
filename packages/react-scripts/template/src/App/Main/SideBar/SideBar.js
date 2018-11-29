@@ -1,11 +1,11 @@
+import './SideBar.css';
 import React from 'react';
-import { Pane, Image } from 'evergreen-ui';
+import { Pane, Image, Icon } from 'evergreen-ui';
 import { Link } from 'react-router-dom';
-import logo from '../../logo.svg';
-import { Icon } from '../../../common/Icon/';
+import logo from '../../../logo.svg';
 import classnames from 'classnames';
 
-export var SideBar = ({ items, pathname, logout }) => (
+var SideBar = ({ items, pathname, logout }) => (
   <Pane
     className="SideBar"
     position={'fixed'}
@@ -32,21 +32,23 @@ export var SideBar = ({ items, pathname, logout }) => (
           'Sidebar__link--active':
             item.pathname === '/'
               ? pathname === item.pathname
-              : pathname.indexOf(item.pathname) === 0
+              : pathname.indexOf(item.pathname) === 0,
         })}
         key={item.pathname}
         to={item.pathname}
       >
-        <Icon type={item.icon} fill="#FFF" size={2} />
+        <Icon icon={item.icon} size={40} color="#FFF" />
       </Link>
     ))}
 
     <Icon
       onClick={logout}
-      className="Sidebar__link Sidebar__logout"
-      type="signOut"
-      fill="#FFF"
-      size={2}
+      className="Sidebar__logout"
+      icon="log-out"
+      color="#FFF"
+      size={25}
     />
   </Pane>
 );
+
+export default SideBar;

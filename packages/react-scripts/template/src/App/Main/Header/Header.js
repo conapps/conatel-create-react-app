@@ -1,9 +1,11 @@
+import './Header.css';
 import React from 'react';
 import { Pane, Heading } from 'evergreen-ui';
 import { Link } from 'react-router-dom';
-export var MainBar = ({ title, username }) => (
+
+var Header = ({ title, username }) => (
   <Pane
-    className="MainBar"
+    className="Header"
     width={'calc(100vw - 4em)'}
     display="flex"
     padding={16}
@@ -20,3 +22,5 @@ export var MainBar = ({ title, username }) => (
     </Pane>
   </Pane>
 );
+
+export default Header;
